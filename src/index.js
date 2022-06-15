@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
 let form=document.querySelector('form')
 form.addEventListener('submit',(e)=>{
   e.preventDefault()
- handleToDo(e.target.description.value) // Changed new-task-description id to description on html.
+ handleToDo(e.target.children[1].value) 
  form.reset()
 })
 
